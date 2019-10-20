@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/shape_back"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="암호와보안에 대해 알아보고 싶으면 클릭!!"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnclose2"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="Button"
+        android:textColorLink="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common" />
+
+    <SlidingDrawer
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:allowSingleTap="true"
+        android:animateOnClick="true"
+        android:bottomOffset="5dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical"
+        android:topOffset="60dp">
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/t1" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="해시(hash)란?
+해시 함수는 임의의 길이의 데이터를 고정된 길이의 데이터로 매핑하는 함수이다.
+해시의 대표적인 종류로는 MD5, SHA 계역 해쉬함수가 있으며 비암호적 해시함수로는 CRC32등이있다.
+이제 해시 함수의 특징에 대해 알아보자."
+                android:textSize="13dp"
+/>
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="닫기"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

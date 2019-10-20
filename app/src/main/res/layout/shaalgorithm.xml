@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_attr"
+    >
+
+
+    <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="INPUT" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="btnSHA"
+
+
+        android:text="SHA-1" />
+
+       <TextView
+           android:id="@+id/tvoutput"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:text="OUTPUT"
+           />
+
+    <EditText
+        android:id="@+id/etInput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="INPUT" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="btnSHA256"
+
+
+        android:text="SHA-256" />
+
+    <TextView
+        android:id="@+id/tvoutput2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OUTPUT"
+        />
+
+    <EditText
+        android:id="@+id/etInput3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="INPUT" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="btnSHA384"
+
+
+        android:text="SHA-384" />
+
+    <TextView
+        android:id="@+id/tvoutput3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OUTPUT"
+        />
+
+    <Button
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/encrypt"
+        android:text="Button"
+        android:textColorLink="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/main2"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기" />
+</LinearLayout>
